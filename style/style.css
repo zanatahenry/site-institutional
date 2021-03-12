@@ -19,8 +19,9 @@ html {
   background-color: #FEFE65;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 9rem;
+  border-bottom: 1px solid #5c8001;
 }
 
 .nav-container .logo-container {
@@ -42,29 +43,123 @@ html {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   text-decoration: none;
-  color: black;
+  color: #515643;
 }
 
 .nav-link:hover{
   transition: 0.2;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #515643;
+}
+
+.nav-link-button {
+  position: absolute;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  background-color: #515643;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #515643;
+  right: 9rem;
+}
+
+.nav-link-button:hover {
+  transition: 500ms;
+  background-color: #FEFE65;
+  color: #515643;
 }
 
 /* SESSÃO INICIAL */
-.main-image-container {
+.section-principal {
   width: 100%;
-  height: 87rem;
+  height: 86rem;
   overflow-y: hidden;
-  background-color: black;
+  background-color: #FEFE65;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.first-img {
+.section-principal .logo-section img {
+  margin-left: 20rem;
+  width: 40rem;
+}
+
+.image-container:first-child{
+  position: relative;
+  margin-right: 50rem;
+  margin-bottom: 40rem;
+  box-shadow: 4px 4px 5px 0px rgba(94,94,94,1);
+}
+
+.image-container:last-child{
+  position: absolute;
+  top: 45rem;
+  right: 5rem;
+  box-shadow: 4px 4px 5px 0px rgba(94,94,94,1);
+}
+
+/* Sessão sobre */
+#about {
   width: 100%;
-  height: 100%;
-
-  object-fit: contain;
+  height: 96rem;
+  overflow-y: hidden;
+  background-color: #cfd3c5;
+  border-bottom: 1px solid #5c8001;
+  border-top: 1px solid #5c8001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+#about .about-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #cfd3c5;
+  border-radius: 4px;
+  width: 60rem;
+  height: 80rem;
+  margin-top: 1.5rem;
+}
+
+#about .about-content .about-paragraph {
+  font-size: 2.3rem;
+  color: #515643;
+  font-weight: 300;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: justify;
+}
+
+#about .about-content .about-paragraph:nth-child(1) {
+  margin-bottom: 1.5rem;
+}
+
+#about .about-content .about-paragraph:nth-child(2) {
+  margin-bottom: 1.5rem;
+}
+
+#about .about-content .about-paragraph:nth-child(3) {
+  margin-bottom: 1.5rem;
+}
+
+#photo {
+  width: 100%;
+  height: 96rem;
+  overflow-y: hidden;
+  background-color: #5c8001;
+  /* border-bottom: 1px solid #5c8001;
+  border-top: 1px solid #5c8001; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 @media (min-width: 700px) {
   :root {
     font-size: 62.5%;
