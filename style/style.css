@@ -11,6 +11,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  user-select: none;
 }
 
 /* NAV BAR */
@@ -113,7 +114,6 @@ html {
   height: 96rem;
   overflow-y: hidden;
   background-color: #cfd3c5;
-  border-bottom: 1px solid #5c8001;
   border-top: 1px solid #5c8001;
   display: flex;
   flex-direction: column;
@@ -152,11 +152,12 @@ html {
   margin-bottom: 1.5rem;
 }
 
+/* Sessão Fotos */
 #photo {
   width: 100%;
   height: 96rem;
   overflow-y: hidden;
-  background-color: #99d98c;
+  background-color: #cfd3c5;
   /* border-bottom: 1px solid #5c8001;
   border-top: 1px solid #5c8001; */
   display: flex;
@@ -196,6 +197,84 @@ html {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
 }
+
+/* Sessão Contato */
+#contact {
+  width: 100%;
+  height: 96rem;
+  overflow-y: hidden;
+  background-color: #FEFE65;
+  border-top: 1px solid #5c8001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact h1 {
+  font-size: 3.2rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#contact .contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact .contact-wrapper .left-section {
+  background-color: blue;
+  margin-right: 50rem;
+}
+
+#contact .contact-wrapper .right-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact .contact-wrapper .right-section .input-wrapper {
+  background: #fff;
+  width: 70rem;
+  padding: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .contact-wrapper .right-section .input-data {
+  height: 80px;
+  /* width: 100%; */
+  position: relative;
+}
+
+#contact .contact-wrapper .right-section .input-wrapper .input-data input {
+  height: 3rem;
+  width: 35rem;
+  border: none;
+  border-bottom: 2px solid silver;
+  outline: none;
+  font-size: 1.7rem;
+  margin-top: 3rem;
+}
+
+#contact .contact-wrapper .right-section .input-wrapper .input-data input:focus ~ label,
+#contact .contact-wrapper .right-section .input-wrapper .input-data input:valid ~ label {
+  transform: translateY(-20px);
+}
+
+#contact .contact-wrapper .right-section .input-wrapper .input-data label {
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+  color: gray;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.7rem;
+  transition: all 0.3s ease;
+  /* top: 70rem; */
+}
+
 @media (min-width: 700px) {
   :root {
     font-size: 62.5%;
