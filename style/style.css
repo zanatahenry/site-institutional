@@ -211,6 +211,10 @@ html {
   justify-content: center;
 }
 
+#contact .contact-header {
+  margin-bottom: 12rem;
+}
+
 #contact h1 {
   font-size: 3.2rem;
   font-family: 'Ubuntu', sans-serif;
@@ -236,20 +240,22 @@ html {
 #contact .contact-wrapper .right-section .input-wrapper {
   background: #fff;
   width: 70rem;
+  /* height: 50rem; */
   padding: 30px;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#contact .contact-wrapper .right-section .input-data {
+#contact .contact-wrapper .right-section .input-data-name {
   height: 80px;
   /* width: 100%; */
   position: relative;
 }
 
-#contact .contact-wrapper .right-section .input-wrapper .input-data input {
+#contact .contact-wrapper .right-section .input-wrapper .input-data-name input {
   height: 3rem;
   width: 35rem;
   border: none;
@@ -259,12 +265,78 @@ html {
   margin-top: 3rem;
 }
 
-#contact .contact-wrapper .right-section .input-wrapper .input-data input:focus ~ label,
-#contact .contact-wrapper .right-section .input-wrapper .input-data input:valid ~ label {
+#contact .contact-wrapper .right-section .input-wrapper .input-data-name input:focus ~ label,
+#contact .contact-wrapper .right-section .input-wrapper .input-data-name input:valid ~ label {
   transform: translateY(-20px);
 }
 
-#contact .contact-wrapper .right-section .input-wrapper .input-data label {
+#contact .contact-wrapper .right-section .input-wrapper .input-data-name label {
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+  color: gray;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.7rem;
+  transition: all 0.3s ease;
+  /* top: 70rem; */
+}
+
+#contact .contact-wrapper .right-section .input-data-number {
+  margin-top: 3rem;
+  height: 80px;
+  /* width: 100%; */
+  position: relative;
+}
+
+#contact .contact-wrapper .right-section .input-wrapper .input-data-number input {
+  height: 3rem;
+  width: 35rem;
+  border: none;
+  border-bottom: 2px solid silver;
+  outline: none;
+  font-size: 1.7rem;
+  margin-top: 3rem;
+}
+
+#contact .contact-wrapper .right-section .input-wrapper .input-data-number input:focus ~ label,
+#contact .contact-wrapper .right-section .input-wrapper .input-data-number input:valid ~ label {
+  transform: translateY(-20px);
+}
+
+#contact .contact-wrapper .right-section .input-wrapper .input-data-number label {
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+  color: gray;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.7rem;
+  transition: all 0.3s ease;
+  /* top: 70rem; */
+}
+
+#contact .contact-wrapper .right-section .input-data-message {
+  margin-top: 3rem;
+  height: 80px;
+  /* width: 100%; */
+  position: relative;
+}
+
+#contact .contact-wrapper .right-section .input-wrapper .input-data-message textarea {
+  height: 3rem;
+  width: 35rem;
+  border: none;
+  border-bottom: 2px solid silver;
+  outline: none;
+  font-size: 1.7rem;
+  margin-top: 3rem;
+}
+
+#contact .contact-wrapper .right-section .input-wrapper .input-data-message textarea:focus ~ label,
+#contact .contact-wrapper .right-section .input-wrapper .input-data-message textarea:valid ~ label {
+  transform: translateY(-20px);
+}
+
+#contact .contact-wrapper .right-section .input-wrapper .input-data-message label {
   position: absolute;
   left: 0;
   bottom: 3rem;
